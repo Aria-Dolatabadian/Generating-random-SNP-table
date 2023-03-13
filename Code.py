@@ -11,7 +11,6 @@ snp_data = np.random.randint(0, 3, size=(num_snps, num_individuals))
 chromosome = np.sort(np.random.randint(1, 20, size=num_snps))
 # Generate  SNP positions
 snp_positions = np.sort(np.random.randint(1, 1000000, size=num_snps))
-# Generate  P value0
 
 snp_df = pd.DataFrame(snp_data, columns=['Individual'+str(i) for i in range(1, num_individuals+1)], index=['SNP'+str(i) for i in range(1, num_snps+1)])
 
